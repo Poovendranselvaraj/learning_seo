@@ -1,0 +1,1 @@
+LCP-below 2.5 is good and above 4.0 is poor
