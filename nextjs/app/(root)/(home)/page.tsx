@@ -3,7 +3,7 @@ import SearchForm from '@/components/SearchForm'
 import React from 'react'
 import { getResources, getResourcesPlaylist } from '@/sanity/actions'
 import ResourceCard from '@/components/ResourceCard'
-// import Header from '@/components/Header'
+import Header from '@/components/Header'
 
 export const revalidate = 900;
 
@@ -33,10 +33,10 @@ const Page = async ({ searchParams }: Props) => {
     {(searchParams?.query || searchParams?.category) && (
     <section className="flex-center mt-6 w-full flex-col sm:mt-20">
 
-      {/* <Header
+      <Header
        query={searchParams?.query || ''}
        category={searchParams?.category || ''}
-      /> */}
+      />
     <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
     {resources?.length > 0 ? (
               resources.map((resource: any) => (
